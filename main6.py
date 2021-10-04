@@ -16,3 +16,4 @@ for _ in range(n):
     i = i + 1
     products.append((i, {'название': name, 'цена': price, 'количество': quantity, 'ед': measure}))
 print(products)
+
