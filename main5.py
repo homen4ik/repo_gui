@@ -13,5 +13,3 @@ for n in my_list:
         i = i + 1
 my_list.insert(i, number)
 print(my_list)
-
-

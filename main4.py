@@ -6,4 +6,3 @@ worlds = input('Введите любые слова через пробел: ')
 for ind, el in enumerate(worlds, 1):
 
     print(ind, el[:10])
-

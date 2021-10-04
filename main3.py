@@ -12,4 +12,3 @@ if m in years_dict:
 else:
     print('Нет такого месяца')
 
-
