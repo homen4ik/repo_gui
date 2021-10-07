@@ -1,18 +1,15 @@
-my_list = input('Enter the numbers: ').split()
-if len(my_list) % 2 == 0:
-    i = 0
-    while i < len(my_list):
-        el = my_list[i]
-        my_list[i] = my_list[i + 1]
-        my_list[i + 1] = el
-        i = i + 2
-        print(my_list)
-else:
-    i = 0
-    while i < len(my_list) - 1:
-        el = my_list[i]
-        my_list[i] = my_list[i + 1]
-        my_list[i + 1] = el
-        i = i + 2
-print(my_list)
+# Реализовать функцию, принимающую несколько параметров, описывающих данные пользователя:
+# имя, фамилия, год рождения, город проживания, email, телефон. Функция должна принимать
+# параметры как именованные аргументы. Реализовать вывод данных о пользователе одной строкой
 
+def people(*args):
+    name = input('your name: ')
+    last_name = input('your last name: ')
+    year = input('your year of birth: ')
+    city = input('your city: ')
+    email = input('your email: ')
+    phone = input('your phone: ')
+    return name, last_name, year, city, email, phone
+
+
+print(people())
